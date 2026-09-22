@@ -2,10 +2,9 @@
   const start = document.getElementById("screen-start");
   const letter = document.getElementById("screen-letter");
   const btnOpen = document.getElementById("btn-open");
-  const btnPetals = document.getElementById("btn-petals");
-  const btnAgain = document.getElementById("btn-again");
   const petalsLayer = document.getElementById("petals");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let raining = false;
 
   function show(screenShow, screenHide) {
     screenHide.classList.remove("is-active");
@@ -19,15 +18,15 @@
 
   function spawnPetals(count) {
     if (reduceMotion) return;
-    const n = count || 28;
+    const n = count || 12;
     for (let i = 0; i < n; i++) {
       const el = document.createElement("span");
       el.className = "petal";
       const left = Math.random() * 100;
-      const size = 10 + Math.random() * 14;
-      const duration = 3.5 + Math.random() * 3.5;
-      const delay = Math.random() * 0.8;
-      const drift = (Math.random() - 0.5) * 140;
+      const size = 10 + Math.random() * 16;
+      const duration = 4 + Math.random() * 5;
+      const delay = Math.random() * 0.6;
+      const drift = (Math.random() - 0.5) * 160;
       el.style.left = left + "vw";
       el.style.width = size + "px";
       el.style.height = size * 1.25 + "px";
@@ -42,22 +41,18 @@
     }
   }
 
+  function startRain() {
+    if (raining || reduceMotion) return;
+    raining = true;
+    spawnPetals(14);
+    window.setInterval(function () {
+      spawnPetals(8);
+    }, 1400);
+  }
+
   btnOpen.addEventListener("click", function () {
     show(letter, start);
-    spawnPetals(22);
   });
 
-  btnPetals.addEventListener("click", function () {
-    spawnPetals(36);
-  });
-
-  btnAgain.addEventListener("click", function () {
-    show(start, letter);
-  });
-
-  if (!reduceMotion) {
-    window.setTimeout(function () {
-      spawnPetals(10);
-    }, 600);
-  }
+  startRain();
 })();
