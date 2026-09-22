@@ -43,18 +43,12 @@
             </g>
             <circle cx="100" cy="100" r="28" fill="url(#centerGrad)"/>
             <circle cx="100" cy="100" r="18" fill="#f39c12" opacity="0.55"/>
-            <g fill="#d35400" opacity="0.35">
-              <circle cx="92" cy="94" r="2.2"/><circle cx="108" cy="96" r="2"/><circle cx="100" cy="108" r="2.4"/>
-              <circle cx="94" cy="106" r="1.8"/><circle cx="110" cy="108" r="1.6"/><circle cx="102" cy="92" r="1.7"/>
-            </g>
           </svg>
         </div>
         <p class="eyebrow">21 de septiembre</p>
         <h1>Para ti,<br /><em>mi pasona</em></h1>
-        <p class="lede">Tengo un regalito para ti pasona emosha</p>
-        <button type="button" class="btn" id="btn-open">
-          Abre mi regalo pasona
-        </button>
+        <p class="lede">Hay un ramito esperándote… y unas palabras que te debían llegar hoy.</p>
+        <button type="button" class="btn" id="btn-open">Abrir mi regalo</button>
       </div>
     </section>
 
@@ -69,7 +63,7 @@
           <p class="saludo">Mi gatito,</p>
           <p>
             <strong>Feliz Día de las Flores Amarillas</strong>, mi pasona.
-            ¿Pensaste que lo había olvidadoooo nooo? Pos no.
+            ¿Pensaste que lo había olvidado? Pos no.
           </p>
           <p class="highlight">
             Feliiiiiz díiiia, mi emosha peshosha.
@@ -77,71 +71,126 @@
           </p>
           <p>
             Gracias por todo… por el apoyo en cada cosa.
-            Sé que a veces peleamos, pero siempre salimos adelante mi emosha.
+            Sé que a veces peleamos, pero siempre salimos adelante.
           </p>
           <p>
             Te amo mucho, <em>mi enojona peshosa</em>.
           </p>
-          <p class="firma">Con todo mi cariño,<br />tu Pason 💛</p>
+          <p class="firma">Con todo cariño,<br />tu pason 💛</p>
         </article>
 
-        <div class="bouquet" id="bouquet" aria-hidden="true">
-          <svg class="bouquet-svg" viewBox="0 0 320 220" role="img" aria-label="Ramo de flores amarillas">
+        <div class="bouquet" aria-hidden="true">
+          <svg class="bouquet-svg" viewBox="0 0 340 260" role="img" aria-label="Ramo de flores amarillas">
             <defs>
-              <linearGradient id="stem" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#7cb342"/><stop offset="100%" stop-color="#558b2f"/>
+              <linearGradient id="stemGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#8bc34a"/>
+                <stop offset="100%" stop-color="#558b2f"/>
               </linearGradient>
-              <radialGradient id="p1" cx="50%" cy="35%" r="65%">
-                <stop offset="0%" stop-color="#fff9c4"/><stop offset="100%" stop-color="#ffb300"/>
+              <radialGradient id="flowerPetal" cx="50%" cy="30%" r="70%">
+                <stop offset="0%" stop-color="#fffde7"/>
+                <stop offset="45%" stop-color="#ffeb3b"/>
+                <stop offset="100%" stop-color="#ff9800"/>
+              </radialGradient>
+              <radialGradient id="flowerCenter" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ffe082"/>
+                <stop offset="100%" stop-color="#e65100"/>
               </radialGradient>
             </defs>
-            <g stroke="url(#stem)" stroke-width="4" fill="none" stroke-linecap="round">
-              <path d="M160 210 C155 150, 145 110, 130 70"/>
-              <path d="M160 210 C160 150, 165 115, 175 75"/>
-              <path d="M160 210 C170 155, 190 120, 210 85"/>
-              <path d="M160 210 C145 160, 120 125, 95 95"/>
-              <path d="M160 210 C175 165, 205 140, 235 115"/>
-            </g>
-            <g class="leafs" fill="#81c784">
-              <ellipse cx="140" cy="150" rx="18" ry="8" transform="rotate(-35 140 150)"/>
-              <ellipse cx="185" cy="155" rx="16" ry="7" transform="rotate(30 185 155)"/>
-            </g>
-            <g class="bloom" transform="translate(95,95) scale(0.85)">
-              <ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)"/><ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(72)"/>
-              <ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(144)"/><ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(216)"/>
-              <ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(288)"/><circle r="10" fill="#ef6c00"/>
-            </g>
-            <g class="bloom" transform="translate(130,70) scale(1)">
-              <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#p1)"/><ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#p1)" transform="rotate(72)"/>
-              <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#p1)" transform="rotate(144)"/><ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#p1)" transform="rotate(216)"/>
-              <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#p1)" transform="rotate(288)"/><circle r="11" fill="#e65100"/>
-            </g>
-            <g class="bloom" transform="translate(175,75) scale(0.95)">
-              <ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)"/><ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(72)"/>
-              <ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(144)"/><ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(216)"/>
-              <ellipse cx="0" cy="-28" rx="12" ry="26" fill="url(#p1)" transform="rotate(288)"/><circle r="10" fill="#ef6c00"/>
-            </g>
-            <g class="bloom" transform="translate(210,85) scale(0.8)">
-              <ellipse cx="0" cy="-26" rx="11" ry="24" fill="url(#p1)"/><ellipse cx="0" cy="-26" rx="11" ry="24" fill="url(#p1)" transform="rotate(72)"/>
-              <ellipse cx="0" cy="-26" rx="11" ry="24" fill="url(#p1)" transform="rotate(144)"/><ellipse cx="0" cy="-26" rx="11" ry="24" fill="url(#p1)" transform="rotate(216)"/>
-              <ellipse cx="0" cy="-26" rx="11" ry="24" fill="url(#p1)" transform="rotate(288)"/><circle r="9" fill="#f57c00"/>
-            </g>
-            <g class="bloom" transform="translate(235,115) scale(0.7)">
-              <ellipse cx="0" cy="-24" rx="10" ry="22" fill="url(#p1)"/><ellipse cx="0" cy="-24" rx="10" ry="22" fill="url(#p1)" transform="rotate(72)"/>
-              <ellipse cx="0" cy="-24" rx="10" ry="22" fill="url(#p1)" transform="rotate(144)"/><ellipse cx="0" cy="-24" rx="10" ry="22" fill="url(#p1)" transform="rotate(216)"/>
-              <ellipse cx="0" cy="-24" rx="10" ry="22" fill="url(#p1)" transform="rotate(288)"/><circle r="8" fill="#ef6c00"/>
-            </g>
-            <ellipse cx="160" cy="205" rx="42" ry="10" fill="#c8e6c9" opacity="0.7"/>
-          </svg>
-        </div>
 
-        <div class="actions">
-          <button type="button" class="btn btn--soft" id="btn-petals">
-            Soltar pétalos ✨
-          </button>
-          <button type="button" class="btn btn--ghost" id="btn-again">
-            Volver al inicio
-          </button>
+            <g stroke="url(#stemGrad)" stroke-width="5" fill="none" stroke-linecap="round">
+              <path d="M170 250 C165 190, 150 140, 120 95"/>
+              <path d="M170 250 C168 185, 160 130, 155 85"/>
+              <path d="M170 250 C175 185, 195 135, 220 100"/>
+              <path d="M170 250 C155 195, 125 155, 90 120"/>
+              <path d="M170 250 C185 200, 225 165, 260 135"/>
+              <path d="M170 250 C178 210, 210 180, 245 165"/>
+            </g>
+
+            <g fill="#66bb6a">
+              <ellipse cx="145" cy="185" rx="22" ry="10" transform="rotate(-40 145 185)"/>
+              <ellipse cx="195" cy="195" rx="20" ry="9" transform="rotate(35 195 195)"/>
+              <ellipse cx="130" cy="155" rx="16" ry="7" transform="rotate(-25 130 155)"/>
+            </g>
+
+            <g transform="translate(90 120)">
+              <g class="bloom-pop">
+                <ellipse cx="0" cy="-32" rx="14" ry="30" fill="url(#flowerPetal)"/>
+                <ellipse cx="0" cy="-32" rx="14" ry="30" fill="url(#flowerPetal)" transform="rotate(60)"/>
+                <ellipse cx="0" cy="-32" rx="14" ry="30" fill="url(#flowerPetal)" transform="rotate(120)"/>
+                <ellipse cx="0" cy="-32" rx="14" ry="30" fill="url(#flowerPetal)" transform="rotate(180)"/>
+                <ellipse cx="0" cy="-32" rx="14" ry="30" fill="url(#flowerPetal)" transform="rotate(240)"/>
+                <ellipse cx="0" cy="-32" rx="14" ry="30" fill="url(#flowerPetal)" transform="rotate(300)"/>
+                <circle r="13" fill="url(#flowerCenter)"/>
+                <circle r="6" fill="#bf360c" opacity="0.35"/>
+              </g>
+            </g>
+
+            <g transform="translate(120 95)">
+              <g class="bloom-pop" style="animation-delay:0.1s">
+                <ellipse cx="0" cy="-36" rx="15" ry="33" fill="url(#flowerPetal)"/>
+                <ellipse cx="0" cy="-36" rx="15" ry="33" fill="url(#flowerPetal)" transform="rotate(60)"/>
+                <ellipse cx="0" cy="-36" rx="15" ry="33" fill="url(#flowerPetal)" transform="rotate(120)"/>
+                <ellipse cx="0" cy="-36" rx="15" ry="33" fill="url(#flowerPetal)" transform="rotate(180)"/>
+                <ellipse cx="0" cy="-36" rx="15" ry="33" fill="url(#flowerPetal)" transform="rotate(240)"/>
+                <ellipse cx="0" cy="-36" rx="15" ry="33" fill="url(#flowerPetal)" transform="rotate(300)"/>
+                <circle r="14" fill="url(#flowerCenter)"/>
+                <circle r="6.5" fill="#bf360c" opacity="0.35"/>
+              </g>
+            </g>
+
+            <g transform="translate(155 85)">
+              <g class="bloom-pop" style="animation-delay:0.18s">
+                <ellipse cx="0" cy="-38" rx="16" ry="35" fill="url(#flowerPetal)"/>
+                <ellipse cx="0" cy="-38" rx="16" ry="35" fill="url(#flowerPetal)" transform="rotate(60)"/>
+                <ellipse cx="0" cy="-38" rx="16" ry="35" fill="url(#flowerPetal)" transform="rotate(120)"/>
+                <ellipse cx="0" cy="-38" rx="16" ry="35" fill="url(#flowerPetal)" transform="rotate(180)"/>
+                <ellipse cx="0" cy="-38" rx="16" ry="35" fill="url(#flowerPetal)" transform="rotate(240)"/>
+                <ellipse cx="0" cy="-38" rx="16" ry="35" fill="url(#flowerPetal)" transform="rotate(300)"/>
+                <circle r="15" fill="url(#flowerCenter)"/>
+                <circle r="7" fill="#bf360c" opacity="0.35"/>
+              </g>
+            </g>
+
+            <g transform="translate(220 100)">
+              <g class="bloom-pop" style="animation-delay:0.26s">
+                <ellipse cx="0" cy="-34" rx="14" ry="31" fill="url(#flowerPetal)"/>
+                <ellipse cx="0" cy="-34" rx="14" ry="31" fill="url(#flowerPetal)" transform="rotate(60)"/>
+                <ellipse cx="0" cy="-34" rx="14" ry="31" fill="url(#flowerPetal)" transform="rotate(120)"/>
+                <ellipse cx="0" cy="-34" rx="14" ry="31" fill="url(#flowerPetal)" transform="rotate(180)"/>
+                <ellipse cx="0" cy="-34" rx="14" ry="31" fill="url(#flowerPetal)" transform="rotate(240)"/>
+                <ellipse cx="0" cy="-34" rx="14" ry="31" fill="url(#flowerPetal)" transform="rotate(300)"/>
+                <circle r="13" fill="url(#flowerCenter)"/>
+                <circle r="6" fill="#bf360c" opacity="0.35"/>
+              </g>
+            </g>
+
+            <g transform="translate(260 135)">
+              <g class="bloom-pop" style="animation-delay:0.34s">
+                <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#flowerPetal)"/>
+                <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#flowerPetal)" transform="rotate(60)"/>
+                <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#flowerPetal)" transform="rotate(120)"/>
+                <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#flowerPetal)" transform="rotate(180)"/>
+                <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#flowerPetal)" transform="rotate(240)"/>
+                <ellipse cx="0" cy="-30" rx="13" ry="28" fill="url(#flowerPetal)" transform="rotate(300)"/>
+                <circle r="12" fill="url(#flowerCenter)"/>
+                <circle r="5.5" fill="#bf360c" opacity="0.35"/>
+              </g>
+            </g>
+
+            <g transform="translate(245 165)">
+              <g class="bloom-pop" style="animation-delay:0.4s">
+                <ellipse cx="0" cy="-24" rx="11" ry="22" fill="url(#flowerPetal)"/>
+                <ellipse cx="0" cy="-24" rx="11" ry="22" fill="url(#flowerPetal)" transform="rotate(60)"/>
+                <ellipse cx="0" cy="-24" rx="11" ry="22" fill="url(#flowerPetal)" transform="rotate(120)"/>
+                <ellipse cx="0" cy="-24" rx="11" ry="22" fill="url(#flowerPetal)" transform="rotate(180)"/>
+                <ellipse cx="0" cy="-24" rx="11" ry="22" fill="url(#flowerPetal)" transform="rotate(240)"/>
+                <ellipse cx="0" cy="-24" rx="11" ry="22" fill="url(#flowerPetal)" transform="rotate(300)"/>
+                <circle r="10" fill="url(#flowerCenter)"/>
+              </g>
+            </g>
+
+            <ellipse cx="170" cy="248" rx="48" ry="11" fill="#c8e6c9" opacity="0.75"/>
+          </svg>
         </div>
       </div>
     </section>
